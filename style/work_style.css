@@ -1,0 +1,151 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.wrapper {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Poppins";
+}
+
+.center {
+    max-width: 1484px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    padding-top: 41px;
+    padding-bottom: 9px;
+    justify-content: space-between;
+}
+header ul .logo{
+    font-weight: 700;
+    font-size: 25px;
+    color: #0092e4;
+    margin-right: calc(91px - 66px);
+    width: 171px;
+}
+header .menu ul{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    column-gap: 66px;
+}
+header .menu ul li a{
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+header .quote-btn{
+    justify-self: flex-end;
+}
+header .quote-btn a{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0092e4;
+    padding: 21px 46px 21px 46px;
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.25);
+    background: #fff;
+    border-radius: 39px;
+    text-decoration: none;
+}
+
+.container-work{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 106px;
+}
+.container-work .work-left p{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 489%;
+    letter-spacing: 0.33em;
+    text-transform: uppercase;
+    color: #867e7e;
+}
+.container-work .work-left h3{
+    font-weight: 700;
+    font-size: 71px;
+    line-height: 131%;
+    color: #000;
+}
+.container-work .work-right p{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 158%;
+    letter-spacing: 0.1em;
+    color: #000;
+    padding-top: 110px;
+}
+
+.container-img{
+    max-width: 1386px;
+    width: 100%;
+    margin-top: 200px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    grid-template-rows: 253px 253px;
+    row-gap: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 230px;
+}
+.container-img img{
+    /* object-fit:cover;
+    height: 100%;
+    width: 100%; */
+    margin: 25px;
+    max-width: 100%;
+}
